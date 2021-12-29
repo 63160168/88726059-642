@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <title>Document</title>
+    <style>
+        .s1 {
+            
+            margin-block-end: 18px;
+            writing-mode: horizontal-tb;
+            color: rgb(34, 34, 34);
+            
+        }
+        label{
+            display: block;
+	        margin: 0px 0px -18px 0px;
+ 
+
+            
+            
+            
+        }
+        .s2 {
+            margin-block-end: 18px;
+            writing-mode: horizontal-tb;
+        }
+        input{
+
+            height:15px ;
+            width: 300px;
+
+            margin-left: 130px;
+            border: 0.5px solid rgba(68, 68, 70, 0.6) ;
+            background: rgb(235, 231, 231);
+
+
+        }
+        .s2 input{
+            height:17px ;
+            width: 100px;
+        }
+        select{
+
+            margin-left: 130px;
+            height:22px ;
+            width: 300px;
+            border: 0.5px solid rgba(68, 68, 70, 0.6) ;
+            background: rgb(235, 231, 231);
+
+            
+        }
+        .b1 input{
+            height:30px ;
+            width: 150px;
+            color: rgb(255, 255, 255);
+            background: rgb(37, 37, 37);
+            
+        }
+        .bn1{
+            width: 135px;
+        }
+        .bn2{
+            width: 138px;
+            margin-left: 10px;
+        }
+        .b47{
+            margin-left: 30px;
+        }
+        .s1 #pickup{
+            width: 30px;
+
+        }
+        #otherreq{
+            width: 300px;
+            margin-left: 130px;
+            margin-top: -20px;
+            border: 0.5px solid rgba(68, 68, 70, 0.6) ;
+            background: rgb(235, 231, 231);
+
+        }
+       
+        
+    </style>
+
+
+</head>
+<body>
+    <h3  background: rgb(37, 37, 37);>Hotel Booking</h3>
+    <form method="post" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+        <div class="s1">
+            <label for="roomtype">Room Type</label>
+            <select name="roomtype" >
+                <option value="0">Please Select</option>
+                <option value="Standard">Standard</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Deluxe">Deluxe</option>
+            </select>
+        </div>
+
+        <div class="s1">
+            <label for="numguest">Number Guest</label>
+            <select name="numguest" >
+                <option value="0">Please Select</option>
+                <option value="1-2">1-2</option>
+                <option value="3-4">3-4</option>
+                <option value="5-6">5-6</option>
+                <option value="7-8">7-8</option>
+            </select>
+        </div>
+
+        <div class="s1" > 
+            <label for="name">Name</label>
+            <input type="text" name="fname" id="name" class="bn1" placeholder="First"> 
+            <input type="text" name="lname" id="name" class="bn2" placeholder="Last">
+        </div>
+
+        <div class="s1">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"  placeholder="john@company.com">
+        </div>
+
+        <div class="s2">
+            <label for="arrivaldate">Arrival</label>
+            <input type="date" name="arrivaldate" id="arrivaldate">
+            <input type="time" name="arrivaltime" id="arrivaltime" class="b47">
+            
+        </div>
+
+        <div class="s2"> 
+            <label for="departuredate">Departure</label>
+            <input type="date" name="departuredate" id="departuredate">
+            <input type="time" name="departuretime" id="departuretime"class="b47">
+        </div>
+        
+        <div class="s1">
+            <label for="pickup">Free Pickup</label>
+            <input type="radio" name="pickup" id="pickup" value="Yes" >Yes, Sure!<br>
+            <input type="radio" name="pickup" id="pickup" value="No" >No, I already rented a car.
+        </div>
+
+        <div class="s1">
+            <label for="flightnum">Flight Number</label>
+            <input type="text" name="flightnum" id="flightnum"  placeholder="C1209">
+        </div>
+        <br>
+        Other requests<br>
+        <Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea>
+        <br>
+        <br>
+        <div class="b1">
+            <input type="submit" id="submit" value="Complete Reservation">
+        </div>
+    </form>
+</body>
+</html>
